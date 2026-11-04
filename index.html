@@ -340,6 +340,9 @@
     .sched-row.highlight .sched-event        { color: var(--navy); font-weight: 600; }
     .sched-row.break-row                     { opacity: 0.6; font-style: italic; }
 
+    .sched-row.keynote { background: var(--sand); }
+    .sched-keynote-label { display: block; font-size: 0.75rem; text-transform: uppercase; }
+    .sched-chair { color: var(--muted); font-size: 0.85rem; margin: 0.5rem 0; }
     .sched-speaker { font-size: 0.78rem; color: var(--muted); margin-top: 0.1rem; }
 
     /* ── Sign-up section ───────────────────────────────────────────── */
@@ -692,7 +695,8 @@
       <div class="day-block">
         <h3>Wednesday, 11 November</h3>
 
-                   <h4>Room: Carson</h4>
+        <h4>Room: Carson</h4>
+        <p class="sched-chair">Morning chair: Anna Garoflid-Oprescu</p>
 
         <div class="sched-row">
           <span class="sched-time">10:00 &ndash; 10:15</span>
@@ -720,6 +724,8 @@
           <div class="sched-event">Lunch</div>
         </div>
 
+        <p class="sched-chair">Afternoon chair: Niels Linnemann</p>
+
         <div class="sched-row highlight">
           <span class="sched-time">14:00 &ndash; 15:00</span>
           <div class="sched-event">
@@ -741,10 +747,11 @@
           <div class="sched-event">Coffee break</div>
         </div>
 
-        <div class="sched-row highlight">
+        <div class="sched-row highlight keynote">
           <span class="sched-time">16:30 &ndash; 18:00</span>
           <div class="sched-event">
-            Keynote: TBA
+            <span class="sched-keynote-label">Keynote</span>
+            TBA
             <div class="sched-speaker">Emily E. Sullivan</div>
           </div>
         </div>
@@ -753,7 +760,10 @@
           <span class="sched-time">19:30</span>
           <div class="sched-event">
             Dinner
-            <div class="sched-speaker">La Pignata</div>
+            <div class="sched-speaker">
+              <a href="https://www.lapignata.ch/" target="_blank" rel="noopener">La Pignata</a>
+              &middot; <a href="https://www.google.com/maps/search/?api=1&amp;query=La+Pignata%2C+Avenue+du+Mail+3%2C+Gen%C3%A8ve" target="_blank" rel="noopener">Open map</a>
+            </div>
           </div>
         </div>
       </div>
@@ -763,10 +773,12 @@
         <h3>Thursday, 12 November</h3>
 
         <h4>Room: Chico Mendes</h4>
+        <p class="sched-chair">Morning chair: G&eacute;raldine Tornare</p>
 
-        <div class="sched-row highlight">
+        <div class="sched-row highlight keynote">
           <span class="sched-time">09:45 &ndash; 11:15</span>
           <div class="sched-event">
+            <span class="sched-keynote-label">Keynote</span>
             Disciplining Anthropomorphiszing Extensions of Cognitive Language to AI
             <div class="sched-speaker">Matthieu Queloz</div>
           </div>
@@ -786,7 +798,8 @@
           <div class="sched-event">Lunch</div>
         </div>
 
-           <h4>Room: Carson</h4>
+        <h4>Room: Carson</h4>
+        <p class="sched-chair">Afternoon chair: Eliot du Sordet</p>
 
         
         <div class="sched-row highlight">
