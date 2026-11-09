@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>BJPS Heuristics Study — The Age of the Bookworm</title>
+<title>BJPS Heuristics Study</title>
+<meta name="robots" content="noindex, nofollow"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet"/>
@@ -19,9 +20,7 @@ html{scroll-behavior:smooth}
 body{font-family:var(--sans);font-size:1rem;line-height:1.7;color:var(--text);background:var(--cream)}
 
 /* Nav */
-nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;justify-content:center;gap:0;flex-wrap:wrap}
-nav a{display:inline-block;padding:.65rem 1.15rem;color:rgba(255,255,255,.75);text-decoration:none;font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
-nav a:hover,nav a.active{color:#fff}
+nav{display:none}
 
 /* Layout */
 .container{max-width:900px;margin:0 auto;padding:0 2rem}
@@ -41,8 +40,7 @@ li{margin-bottom:.25rem}
 .mono{font-family:var(--mono);font-size:.85em}
 
 /* Acknowledgements banner */
-.ack-bar{background:var(--navy2);color:rgba(255,255,255,.8);font-size:.88rem;padding:.6rem 2rem;text-align:center}
-.ack-bar a{color:var(--gold-l)}
+.ack-bar{display:none}
 
 /* Score badge */
 .badge{display:inline-block;font-family:var(--mono);font-size:.78rem;border:1px solid var(--gold);border-radius:10px;padding:1px 8px;color:var(--gold);white-space:nowrap}
@@ -6168,13 +6166,13 @@ footer a{color:var(--gold-l)}
   </ul>
 
   <h2>Funding &amp; acknowledgements</h2>
-  <p>This study was supported by the <b>Chair of Statistical Field Theory</b> at the École Polytechnique Fédérale de Lausanne (<a href="https://www.epfl.ch/labs/csft/" rel="noopener">EPFL</a>). Part of this work served as input for the <b><a href="https://autophil.eu" rel="noopener">AUTOPHIL collaboration</a></b>, which investigates the use of AI tools in analytic philosophy.</p>
+  <p class="muted">Supported by the <a href="https://www.epfl.ch/labs/csft/" rel="noopener">Chair of Statistical Field Theory, EPFL</a>. Part of this work served as input for the <a href="https://autophil.eu" rel="noopener">AUTOPHIL collaboration</a>.</p>
 
 </div>
 </section>
 
 <footer>
-  <p>Part of <a href="index.html">The Age of the Bookworm</a> workshop series &nbsp;·&nbsp; Updated 2026-10-21</p>
+  <p>Updated 2026-10-21 &nbsp;·&nbsp; Supported by the <a href="https://www.epfl.ch/labs/csft/" rel="noopener">Chair of Statistical Field Theory, EPFL</a> &nbsp;·&nbsp; Input to the <a href="https://autophil.eu" rel="noopener">AUTOPHIL collaboration</a></p>
 </footer>
 
 <script>
