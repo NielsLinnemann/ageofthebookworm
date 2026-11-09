@@ -291,6 +291,17 @@ footer a{color:var(--gold-l)}
    ],
    "examples": [
     {
+     "title": "What Becomes of a Causal Set?",
+     "authors": [
+      "Christian Wüthrich",
+      "Craig Callender"
+     ],
+     "year": 2016,
+     "venue": "British Journal for the Philosophy of Science",
+     "url": "https://arxiv.org/pdf/1502.00018",
+     "kind": "read"
+    },
+    {
      "title": "On the Universality of Hawking Radiation",
      "authors": [
       "Sean Gryb",
@@ -2674,19 +2685,7 @@ footer a{color:var(--gold-l)}
     "Topicality without result: the paper dates with the model version.",
     "Treating a model's self-reports as evidence about itself."
    ],
-   "examples": [
-    {
-     "title": "On the Structure and Function of Scientific Perspectivism in Categorical Quantum Mechanics",
-     "authors": [
-      "Vassilios Karakostas",
-      "Elias Zafiris"
-     ],
-     "year": 2021,
-     "venue": "British Journal for the Philosophy of Science",
-     "url": "https://arxiv.org/pdf/1806.08788v1",
-     "kind": "read"
-    }
-   ]
+   "examples": []
   },
   {
    "id": 57,
@@ -2858,6 +2857,16 @@ footer a{color:var(--gold-l)}
     "Technical work with the philosophy bolted on."
    ],
    "examples": [
+    {
+     "title": "Temporal nonlocality from indefinite causal orders",
+     "authors": [
+      "Laurie Letertre"
+     ],
+     "year": 2025,
+     "venue": "British Journal for the Philosophy of Science",
+     "url": "http://arxiv.org/pdf/2501.12870",
+     "kind": "read"
+    },
     {
      "title": "Limiting Reduction and Modified Gravity",
      "authors": [
@@ -5016,6 +5025,15 @@ footer a{color:var(--gold-l)}
   <h2>How the papers were selected</h2>
   <p>All OpenAlex "article" records from BJPS, 2016–2026 (565 papers) were screened in two stages: first by Claude Haiku on title and abstract (philosophy of physics? research article?), then by Claude Sonnet on the full abstract, retaining only clearly conceptual or philosophical papers (128 eligible). A seeded random draw balanced over three periods (2016–19, 2020–23, 2024–26), with at most two papers per first author per period. Only papers with a findable open copy (publisher OA, arXiv, institutional repository) were kept; 73 drawn papers had no open copy and were dropped. The 50 papers are effectively all BJPS philosophy-of-physics papers from 2016–2026 with a freely accessible full text.</p>
 
+  <h2>Papers whose main idea fits no strategy</h2>
+  <div class="note">
+  <p><b>5 of the 50 papers</b> could not be matched to a strategy that captures their central idea. Some of their secondary moves appear as examples above, but the main contribution of each falls outside the list.</p>
+  <ul>
+  <li>Charles T. Sebens, Sean M. Carroll (2016), <a href="https://arxiv.org/pdf/1405.7577" rel="noopener"><em>Self-locating Uncertainty and the Origin of Probability in Everettian Quantum Mechanics</em></a>. Derives the Born rule of quantum probability from an agent's uncertainty about which branch of an Everettian world they are in.</li><li>Charles T. Sebens (2019), <a href="https://arxiv.org/pdf/1811.10602" rel="noopener"><em>The Mass of the Gravitational Field</em></a>. Argues, within a field-theoretic treatment, that the gravitational field itself carries mass and energy.</li><li>Katie Robertson (2021), <a href="http://pure-oai.bham.ac.uk/ws/files/101778429/TDSL_accepted_version_.pdf" rel="noopener"><em>In Search of the Holy Grail: How to Reduce the Second Law of Thermodynamics</em></a>. Gives a positive account of how the second law of thermodynamics reduces to statistical mechanics.</li><li>Simon Friederich (2021), <a href="https://arxiv.org/pdf/2106.13502" rel="noopener"><em>Introducing the Q-Based Interpretation of Quantum Theory</em></a>. Proposes and develops a new interpretation of quantum theory.</li><li>Simon W. Saunders (2024), <a href="https://arxiv.org/pdf/2404.12954" rel="noopener"><em>Finite Frequentism Explains Quantum Probability</em></a>. Defends a finite-frequency account of probability and argues that it explains quantum probability in the Everett interpretation.</li>
+  </ul>
+  <p style="margin-bottom:0">All five do the same kind of thing: they propose and develop a new positive account, such as a derivation, an interpretation or a reduction, rather than criticising, repairing or reorganising existing ones. The strategy list has no entry for building a substantial new theory or derivation from the ground up. This gap is a result in its own right, and it probably reflects how the strategies were extracted: reusable moves are easier to spot in critical papers than in constructive ones.</p>
+  </div>
+
   <h2>BJPS source papers</h2>
   <p class="muted">The strategies were read off these 50 papers published in <i>The British Journal for the Philosophy of Science</i>, 2016–2026.</p>
   <ul class="papers-list">
@@ -5129,7 +5147,7 @@ function render() {
     <div class="slbl">What it delivers</div><p style="margin:2px 0 8px">${esc(s.deliverable)}</p>
     <div class="slbl">How it fails</div><ul>${s.failure.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
     <div class="slbl">Areas</div><p style="margin:2px 0 8px">${esc(s.areas.join(', '))}</p>
-    ${s.examples&&s.examples.length?`<div class="slbl">Example papers (machine-assigned, may be wrong)</div><ul class="study-ex">${s.examples.map(exLink).join('')}</ul>`:''}
+    <div class="slbl">Example papers (machine-assigned, may be wrong)</div>${s.examples&&s.examples.length?`<ul class="study-ex">${s.examples.map(exLink).join('')}</ul>`:'<p class="muted" style="margin:2px 0">No clear instance among the 50 BJPS papers.</p>'}
   </div></details>`).join('') || '<p class="muted">No strategy matches.</p>';
   matrix();
 }
